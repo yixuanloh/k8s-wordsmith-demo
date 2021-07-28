@@ -1,7 +1,7 @@
 # RUN
 FROM adoptopenjdk:8-jre
 
-ENTRYPOINT ["java", "-Xmx8m", "-Xms8m", "-jar", "/app/words-1.0-20210727.030607-1.jar"]
+ENTRYPOINT ["java", "-Xmx8m", "-Xms8m", "-jar", "/app/words-1.0-20210728.070207-1-jar-with-dependencies.jar"]
 EXPOSE 8080
 
 WORKDIR /app

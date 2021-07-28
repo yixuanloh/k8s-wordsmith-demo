@@ -5,5 +5,5 @@ ENTRYPOINT ["java", "-Xmx8m", "-Xms8m", "-jar", "/app/words-1.0-20210727.030607-
 EXPOSE 8080
 
 WORKDIR /app
-COPY words/codestory/words/1.0-SNAPSHOT/words-1.0-20210727.030607-1.jar .
+COPY words/codestory/words/1.0-SNAPSHOT/words-1.0-20210728.070207-1-jar-with-dependencies.jar .
 

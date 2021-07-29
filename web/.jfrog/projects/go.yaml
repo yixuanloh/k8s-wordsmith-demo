@@ -1,0 +1,8 @@
+version: 1
+type: go
+resolver:
+  repo: go-yixuan-virtual
+  serverId: devops-artifactory-10-168-0-62
+deployer:
+  repo: go-yixuan
+  serverId: devops-artifactory-10-168-0-62

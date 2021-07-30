@@ -9,6 +9,7 @@ WORKDIR /apps/static
 RUN /bin/sh -c 'ls /apps'
 RUN /bin/sh -c 'ls /apps/github.com/yixuanloh/k8s-wordsmith-demo/web@v1.2.0'
 RUN /bin/sh -c 'cp -r /apps/github.com/yixuanloh/k8s-wordsmith-demo/web@v1.2.0/static/* /apps/static/'
+RUN /bin/sh -c 'ls /apps/static'
 
 RUN chmod +x /apps/github.com/yixuanloh/k8s-wordsmith-demo/web@v1.2.0/web
 EXPOSE 80

@@ -35,7 +35,7 @@ spec:
         - containerPort: 5432
           name: db
       imagePullSecrets:
-      - name: default-token-w9qcz
+      - name: regcred
 ---
 apiVersion: v1
 kind: Service
@@ -75,7 +75,7 @@ spec:
         - containerPort: 8080
           name: api
       imagePullSecrets:
-      - name: default-token-w9qcz
+      - name: regcred
 ---
 apiVersion: v1
 kind: Service
@@ -114,4 +114,4 @@ spec:
         - containerPort: 80
           name: words-web
       imagePullSecrets:
-      - name: default-token-w9qcz
+      - name: regcred

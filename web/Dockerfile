@@ -10,7 +10,7 @@ FROM alpine
 WORKDIR /apps
 EXPOSE 80
 CMD ["/apps/dispatcher"]
-COPY --from=builder /go/dispatcher .
+COPY --from=builder /apps/go/dispatcher .
 RUN chmod +x /apps/dispatcher
 
 RUN /bin/sh -c 'ls /apps'

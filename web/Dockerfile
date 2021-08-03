@@ -11,6 +11,3 @@ RUN /bin/sh -c 'ls /apps'
 FROM alpine
 EXPOSE 80
 CMD ["/apps/dispatcher"]
-
-RUN /bin/sh -c 'ls /apps'
-RUN /bin/sh -c 'ls /'

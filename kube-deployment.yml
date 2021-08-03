@@ -34,6 +34,8 @@ spec:
         ports:
         - containerPort: 5432
           name: db
+      imagePullSecrets:
+      - name: devops-artifactory-server
 ---
 apiVersion: v1
 kind: Service
@@ -72,6 +74,8 @@ spec:
         ports:
         - containerPort: 8080
           name: api
+      imagePullSecrets:
+      - name: devops-artifactory-server
 ---
 apiVersion: v1
 kind: Service
@@ -109,3 +113,5 @@ spec:
         ports:
         - containerPort: 80
           name: words-web
+      imagePullSecrets:
+      - name: devops-artifactory-server

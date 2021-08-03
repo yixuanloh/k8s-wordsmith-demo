@@ -6,8 +6,7 @@ RUN /bin/sh -c 'cp -r /apps/github.com/yixuanloh/k8s-wordsmith-demo/web@v1.2.0/d
 RUN /bin/sh -c 'cp -r /apps/github.com/yixuanloh/k8s-wordsmith-demo/web@v1.2.0/static .'
 RUN go build /apps/dispatcher.go
 RUN /bin/sh -c 'ls /apps'
-
-
-FROM alpine
 EXPOSE 80
 CMD ["/apps/dispatcher"]
+
+

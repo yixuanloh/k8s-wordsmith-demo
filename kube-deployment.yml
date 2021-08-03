@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: db
-        image: 10.168.0.62:8082/artifactory/docker-repo-yixuan/db/v1.2.0
+        image: docker-repo-yixuan/db/v1.2.0
         ports:
         - containerPort: 5432
           name: db
@@ -70,7 +70,7 @@ spec:
     spec:
       containers:
       - name: words
-        image: 10.168.0.62:8082/artifactory/docker-repo-yixuan/word/v1.2.0
+        image: docker-repo-yixuan/word/v1.2.0
         ports:
         - containerPort: 8080
           name: api
@@ -109,7 +109,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: 10.168.0.62:8082/artifactory/docker-repo-yixuan/go/v1.2.0
+        image: docker-repo-yixuan/go/v1.2.0
         ports:
         - containerPort: 80
           name: words-web
